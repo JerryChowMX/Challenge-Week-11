@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for responsiveness and compatibility -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title for the notes page -->
+  <title>Notes</title>
+
+  <!-- Link to the external CSS for styling -->
+  <link rel="stylesheet" href="assets/css/stylesNotes.css">
+</head>
+
+<body>
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <a href="/" class="logo">Note Taker</a>
+      <!-- Buttons will be dynamically shown/hidden based on user actions -->
+      <button id="saveNote" class="btn hidden">Save Note</button>
+      <button id="newNote" class="btn hidden">New Note</button>
+      <button id="clearForm" class="btn hidden">Clear Form</button>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+      <!-- Existing notes list -->
+      <section id="noteList" class="note-list">
+        <!-- Placeholder for notes that will be dynamically loaded -->
+      </section>
+
+      <!-- New note entry form -->
+      <section id="noteForm" class="note-form">
+        <input type="text" id="noteTitle" placeholder="Note Title" autofocus />
+        <textarea id="noteText" placeholder="Note Text"></textarea>
+        <!-- Save button for the form -->
+        <button id="formSaveNote" class="btn">Save Note</button>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>© 2024 Note Taker. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="assets/js/notes.js"></script>
+</body>
+
+</html>

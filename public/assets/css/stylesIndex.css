@@ -1,0 +1,89 @@
+/* stylesIndex.css - Styling for the index.html page of the Note Taker application */
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-screen hero image setup */
+.hero-image {
+    /* Placeholder for the background image */
+    background-image: url('../images/Cool_Image.png'); /* Update this path with your actual image */
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Overlay for text contrast, if needed */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+/* Centering content inside the hero image */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 10px black;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Styling the 'Take Notes' button */
+.take-notes-btn {
+    background-color: white; /* Dark background for the button */
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline from link */
+    transition: ease all 0.9s;
+}
+
+.take-notes-btn:hover {
+    background-color: black; /* Slightly lighter on hover */
+    color: white;
+    border: solid 1px white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .take-notes-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}

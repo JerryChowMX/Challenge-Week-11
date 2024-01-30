@@ -1,0 +1,157 @@
+/* stylesNotes.css - Styling for the notes.html page of the Note Taker application */
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the main container */
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn.hidden {
+    display: none;
+}
+
+/* Main content area styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Existing notes list styles */
+.note-list {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enables scrolling for long lists */
+}
+
+/* New note entry form styles */
+.note-form {
+    width: 65%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and textarea styles */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+/* Styling for the 'Save Note' button in the form */
+#formSaveNote {
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Spacing above the button */
+}
+
+#formSaveNote:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+/* Responsive design adjustments for the form button */
+@media screen and (max-width: 768px) {
+    #formSaveNote {
+        padding: 15px 25px;
+        font-size: 1em;
+    }
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #666;
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .note-list,
+    .note-form {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .btn {
+        padding: 15px 25px;
+    }
+}
